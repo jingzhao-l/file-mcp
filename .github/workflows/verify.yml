@@ -189,14 +189,14 @@ jobs:
           }
 
       - name: Upload Windows x64 package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: FileMCP-windows-x64
           path: dist/FileMCP-v0.4.0-windows-x64.zip
           if-no-files-found: error
 
       - name: Upload Windows ARM64 package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: FileMCP-windows-arm64
           path: dist/FileMCP-v0.4.0-windows-arm64.zip
